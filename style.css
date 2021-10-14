@@ -1,0 +1,232 @@
+html{
+    font-family: Quicksand ,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #AA0000;
+}
+h2{
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 24px;
+    width: 100%;
+}
+hgroup > p{
+    color: #fff;
+    font-size: 16px;
+    padding: 0 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+/* NAV */
+.nav-js{
+    width: 20%;
+    height: 90%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(170, 0, 0, 0.84);/*tutaj JS*/
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100%;
+    z-index: 2;
+}
+#toggle{
+    font-size: 36px;
+    color: white;/*tutaj JS zmiana koloru*/
+    color: #AA0000;
+}
+.nav-js > *{
+    margin: 25px 0;
+}
+nav > a{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    display: none;/*tutaj JS*/
+    /* display: inline; */
+}
+nav > a > figcaption{
+    width: 100%;
+    text-align: center;
+}
+.icons{
+    width: 30px;
+}
+/* HEADER */
+header{
+    height: 100vh;
+    position: relative;
+    background-image: url(bgc.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+header > img{
+    width: 100%;
+    max-width: 300px;
+}
+.hgroup-js{
+    width: 100%;/*tutaj JS - włączony przycisk zmienia width na 80%, wyłączony - width: 100%*/
+    /* width: 80%; */
+    height: 50vh;
+    background-color: rgba(170, 0, 0, 0.84);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* MAIN */
+.main-js{
+    width: 100%;/*tutaj JS - włączony przycisk zmienia width na 80%, wyłączony - width: 100%*/
+    /* width: 80%; */
+    float: right;
+}
+/* OUR COACHES */
+#our-coaches{
+    background-image: linear-gradient(90deg, #aa0000c4, #aa000059), url(luis-vidal.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h2{
+    padding-bottom: 10px;
+}
+p{
+    font-size: 14px;
+}
+article{
+    min-width: 240px;
+    max-width: 400px;
+    min-height: 200px;
+    background-color: #FACE2F;
+    margin: 20px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+article::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.541);
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px gold solid;
+    display: none;
+}
+article:hover::before{
+    display: inline;
+}
+.text{
+    display: none;
+    max-width: 200px;
+    color: #fff;
+    z-index: 3;
+    margin: 0 auto;
+}
+article:hover > .text{
+    display: inline;
+}
+#hvw-coach{
+    background-image: url(images/hwv-coach-min.png);
+}
+#fit-coach1{
+    background-image: url(images/fit-coach1-min.png);
+}
+#fit-coach2{
+    background-image: url(images/fit-coach2-min.png);
+}
+#crossfit-coach{
+    background-image: url(images/crossfit-coach-min.png);
+}
+#button-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+button{
+    width: fit-content;
+    height: 75px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    background-color: black;
+    border: 2px solid black;
+    letter-spacing: 2px;
+    padding: 10px;
+    cursor: pointer;
+}
+/* PRICES & PLANS */
+#prices_plans{
+    background-image: linear-gradient(90deg, #aa0000c4, #aa000059), url(charles.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+}
+figure{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+figure > figcaption{
+    width: 80%;
+    margin: 10px 0;
+    font-weight: 600;
+    color: #fff;
+}
+.price{
+    margin: 30px 0;
+    width: 100%;
+    color: #FACE2F;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}
+/* LOCATION */
+#location{
+    background-image: linear-gradient(90deg, #aa0000c4, #aa000059), url(mapa.PNG);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+}
+address{
+    height: 50%;
+    text-align: center;
+    width: 80%;
+}
+table{
+   width: 100%;
+   height: fit-content;
+   background-color:black;
+   line-height: 40px;
+   border-radius: 20px;
+   color: #fff;
+}
