@@ -62,7 +62,7 @@ nav > a > figcaption{
 header{
     height: 100vh;
     position: relative;
-    background-image: url(bgc.jpg);
+    background-image: url(bgc-min.jpg);
     background-size: cover;
     background-position: right;
     display: flex;
@@ -90,7 +90,7 @@ header > img{
 }
 /* OUR COACHES */
 #our-coaches{
-    background-image: linear-gradient(90deg, #aa0000c4, #aa000059), url(luis-vidal.jpg);
+    background-image: linear-gradient(90deg, #aa0000c4, #aa000059), url(luis-vidal-min.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -177,7 +177,7 @@ button{
 }
 /* PRICES & PLANS */
 #prices_plans{
-    background-image: linear-gradient(90deg, #aa0000c4, #aa000059), url(charles.jpg);
+    background-image: linear-gradient(90deg, #aa0000c4, #aa000059), url(charles-min.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -206,7 +206,7 @@ figure > figcaption{
 }
 /* LOCATION */
 #location{
-    background-image: linear-gradient(90deg, #aa0000c4, #aa000059), url(mapa.PNG);
+    background-image: linear-gradient(90deg, #aa0000c4, #aa000059), url(mapa-min.PNG);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
